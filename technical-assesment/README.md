@@ -58,7 +58,7 @@ By design, this assessment contains more work than you will be able to complete 
 
 **Implement this user story by doing the following:**
 
- - [ ] Refactor the **Home** component to dynamically render the sample data in `Savory-Eat/src/data/data.json`. Each object in the menuItems array represents one menu item's details.
+ - [ ] Refactor the **AllRecipies** component to dynamically render the sample data in `Savory-Eat/src/data/data.json`. Each object in the menuItems array represents one menu item's details.
     - You may create additional components and/or refactor existing components as necessary.
     **WHEN THIS STEP IS COMPLETE:** please make a commit with the message "complete step one"
 

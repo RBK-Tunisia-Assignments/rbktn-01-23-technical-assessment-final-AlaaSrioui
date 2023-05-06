@@ -4,9 +4,9 @@ const mysqlConfig = require("./config.js");
 const connection = mysql.createConnection(mysqlConfig);
 connection.connect((err) => {
   if (err) {
-    console.error(err);
+    console.log(err);
   } else {
-    console.log("db conected !!");
+    console.log("db connected !!");
   }
 });
 module.exports = connection;
