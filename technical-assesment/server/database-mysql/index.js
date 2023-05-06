@@ -6,7 +6,7 @@ connection.connect((err) => {
   if (err) {
     console.log(err);
   } else {
-    console.log("db connected !!");
+    console.log("connected to database !");
   }
 });
 module.exports = connection;

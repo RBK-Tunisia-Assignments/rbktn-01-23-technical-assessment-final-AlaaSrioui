@@ -3,6 +3,7 @@ import React ,{useState}from "react";
 import "./App.css";
 import Home from "./components/Home.jsx";
 import AllRecepies from "./components/AllRecipies.jsx"
+import Add from "./components/Add";
 function App() {
 const [view,setView]=useState('Home')
   let changeView = (view) => {
@@ -34,13 +35,14 @@ const [view,setView]=useState('Home')
           Addrecepie
         </div>
         <div className="nav-item" active-color="red">
-          <input type="text"  />
+          <input type="text"  id="searchInput"/>
           <button>search</button>
         </div>
         <span className="nav-indicator"></span>
       </nav>
       {view === "Home" && <Home changeView={changeView}/>}
-      {view === "Allrecepies" && <AllRecepies />}
+      {view === "Allrecepies" && <AllRecepies search={document.getElementById("searchInput").value}/>}
+      {view === "Addrecepie" && <Add />}
      
       <div></div>
     </div>
